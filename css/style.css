@@ -1,0 +1,130 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding: 60px;
+}
+.section-title {
+    font-family: 'Parisienne',serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 131px;
+    color: #D38753;
+}
+/* header */
+.header {
+    padding-top: 28px;
+    padding-bottom: 24px;
+}
+.logo {
+    display: block;
+    width: 305px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 29px;
+}
+nav {
+    width: 991px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-list {
+    list-style: none;
+    text-align: center;
+    font-family: 'Princess Sofia',serif;
+}
+.menu-item {
+    display: inline-block;
+    margin: 0 50px;
+}
+.menu-link {
+    font-size: 36px;
+    line-height: 56px;
+    color: black;
+}
+menu-link:hover {
+    color: #c5621c; 
+}
+.menu-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #c5621c;
+    border-radius: 40px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: .3s;
+}
+.menu-link:hover::after {
+    transform: scaleX(1);
+}
+.hero {
+    padding-top: 60px;
+    padding-bottom: 210px;
+    height: 700px;
+    background: url(../img/hero-bg.jpg);
+    position: relative;
+    z-index: 2;
+}
+.hero::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90.16deg, #F0AD80 39.23%, rgba(250, 195, 158, 0) 95.33%);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+.hero-title {
+    font-family: 'Nunito',serif;
+    font-size: 144px;
+    font-weight: 400;
+    line-height: 196px;
+    color: #fef4F4;
+    margin-bottom: 26px;
+}
+.hero-title span {
+    font-family: 'Parisienne',serif;
+}
+.subtitle {
+    font-family: 'Quicksand',serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 145px;
+}
+.bth {
+    display: block;
+    background: #D38753;
+    border-radius: 40px;
+    color: #FFFFFF;
+    width: 450px;
+    padding: 20px 20px 21px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 39px;
+    transition: background .3s;
+}
+.bth:hover {
+    background: #D17753;
+}
+.adv-list {
+    z-index: 1;
+}
+.adv-img {
+    height: 1000px;
+}
